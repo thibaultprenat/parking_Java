@@ -56,20 +56,102 @@ public class About extends JDialog {
         }
 
         {
-            JPanel panel = new JPanel();
+            JPanel panel1 = new JPanel();
             GridBagConstraints gbc_panel = new GridBagConstraints();
             gbc_panel.fill = GridBagConstraints.BOTH;
             gbc_panel.insets = new Insets(0, 0, 5, 0);
             gbc_panel.gridx = 0;
             gbc_panel.gridy = 1;
-            contentPanel.add(panel, gbc_panel);
-            panel.setLayout(new BorderLayout(0, 0));
+            contentPanel.add(panel1, gbc_panel);
+            panel1.setLayout(new BorderLayout(0, 0));
             {
                 JLabel label = new JLabel();
                 label.setHorizontalAlignment(SwingConstants.CENTER);
                 label.setIcon(new ImageIcon(getClass().getResource("/resources/assets/parking.png")));
-                panel.add(label, BorderLayout.NORTH);
+                panel1.add(label, BorderLayout.NORTH);
             }
+
+            {
+                JLabel lblJudy = new JLabel("Judy", SwingConstants.CENTER);
+                panel1.add(lblJudy, BorderLayout.SOUTH);
+
+            }
+        }
+        {
+            JPanel panel2 = new JPanel();
+            GridBagConstraints gbc_panel = new GridBagConstraints();
+            gbc_panel.fill = GridBagConstraints.BOTH;
+            gbc_panel.insets = new Insets(0, 0, 5, 0);
+            gbc_panel.gridx = 1;
+            gbc_panel.gridy = 1;
+            contentPanel.add(panel2, gbc_panel);
+            panel2.setLayout(new BorderLayout(0, 0));
+            {
+                JLabel label = new JLabel();
+                label.setHorizontalAlignment(SwingConstants.CENTER);
+                label.setIcon(new ImageIcon(getClass().getResource("/resources/assets/fermer.png")));
+                panel2.add(label, BorderLayout.NORTH);
+            }
+
+            {
+                JLabel lblJudy = new JLabel("Jackie", SwingConstants.CENTER);
+                panel2.add(lblJudy, BorderLayout.SOUTH);
+
+            }
+        }
+        {
+            JPanel panel3 = new JPanel();
+            GridBagConstraints gbc_panel = new GridBagConstraints();
+            gbc_panel.fill = GridBagConstraints.BOTH;
+            gbc_panel.insets = new Insets(0, 0, 5, 0);
+            gbc_panel.gridx = 3;
+            gbc_panel.gridy = 1;
+            contentPanel.add(panel3, gbc_panel);
+            panel3.setLayout(new BorderLayout(0, 0));
+            {
+                JLabel label = new JLabel();
+                label.setHorizontalAlignment(SwingConstants.CENTER);
+                label.setIcon(new ImageIcon(getClass().getResource("/resources/assets/éclaire.png")));
+                panel3.add(label, BorderLayout.NORTH);
+            }
+
+            {
+                JLabel lblJudy = new JLabel("Judy", SwingConstants.CENTER);
+                panel3.add(lblJudy, BorderLayout.SOUTH);
+
+            }
+        }
+        {
+            JPanel panel4 = new JPanel();
+            GridBagConstraints gbc_panel = new GridBagConstraints();
+            gbc_panel.fill = GridBagConstraints.BOTH;
+            gbc_panel.insets = new Insets(0, 0, 5, 0);
+            gbc_panel.gridx = 4;
+            gbc_panel.gridy = 1;
+            contentPanel.add(panel4, gbc_panel);
+            panel4.setLayout(new BorderLayout(0, 0));
+            {
+                JLabel label = new JLabel();
+                label.setHorizontalAlignment(SwingConstants.CENTER);
+                label.setIcon(new ImageIcon(getClass().getResource("/resources/assets/bite.png")));
+                panel4.add(label, BorderLayout.NORTH);
+            }
+
+            {
+                JLabel lblJudy = new JLabel("Jackie", SwingConstants.CENTER);
+                panel4.add(lblJudy, BorderLayout.SOUTH);
+
+            }
+        }
+        {
+            JLabel label = new JLabel("2021");
+            GridBagConstraints gbc_label = new GridBagConstraints();
+            gbc_label.fill = GridBagConstraints.SOUTH;
+            gbc_label.insets = new Insets(0, 0, 5, 0);
+            gbc_label.gridx = 2;
+            gbc_label.gridy = 2;
+            contentPanel.add(label, gbc_label);
+
         }
 
     }
