@@ -1,10 +1,12 @@
 package buisness;
 
+import java.util.Observable;
+
 import exeption.PlaceLibreExeption;
 import exeption.PlaceOccupeeExeption;
-import exeption.PlucAucunePlaceException;
+import exeption.PlusAucunePlaceException;
 
-public abstract class Place {
+public abstract class Place extends Observable {
     static int nbInstance = 0;
     private int numero;
     private String reservationImmat;
@@ -43,9 +45,9 @@ public abstract class Place {
     }
 
     // Reserver la place au véhicule
-    public void reserver(String immat) throws PlucAucunePlaceException {
+    public void reserver(String immat) throws PlusAucunePlaceException {
         if (reserve)
-            throw (new PlucAucunePlaceException());
+            throw (new PlusAucunePlaceException());
         else
 
         {
