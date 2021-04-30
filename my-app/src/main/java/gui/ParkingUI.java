@@ -69,8 +69,17 @@ public class ParkingUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 About about = new About();
+                about.setModal(true);
+                about.setLocationRelativeTo(frame);
+                about.setVisible(true);
             }
         });
         monFichier.add(monNewMenuItem_3);
+
+        JMenu monActions = new JMenu("Action");
+        menuBar.add(monActions);
+
+        JMenuItem montAjouterVehicule = new JMenuItem("Ajouter un Véhicule");
+        monActions.add(montAjouterVehicule);
     }
 }
